@@ -2,6 +2,8 @@ import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:little_sea_otter/common/show_error_dialog.dart';
+import 'package:little_sea_otter/constants/routes.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -61,21 +63,28 @@ class _LoginViewState extends State<LoginView> {
                     .signInWithEmailAndPassword(
                         email: email, password: password);
                 log(userCredential.toString());
+                if (!mounted) return;
+                Navigator.pushNamed(context, storiesRoute);
               } on FirebaseAuthException catch (e) {
                 if (e.code == 'user-not-found') {
                   log('user not found');
+                  showErrorDialog(context, "User not found");
                 } else if (e.code == 'wrong-password') {
                   log('wrong password');
+                  showErrorDialog(context, "Wrong password");
+                } else {
+                  log(e.code);
+                  showErrorDialog(context, "Error: ${e.code}");
                 }
+              } catch (e) {
+                showErrorDialog(context, e.toString());
               }
-              if (!mounted) return;
-              Navigator.pushNamed(context, '/stories');
             },
             child: const Text("Login"),
           ),
           TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/register');
+                Navigator.pushNamed(context, registerRoute);
               },
               child: const Text('Not registered yet? Register now !'))
         ],

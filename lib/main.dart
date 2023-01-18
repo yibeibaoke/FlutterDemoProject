@@ -5,6 +5,7 @@ import 'package:little_sea_otter/views/login_view.dart';
 import 'package:little_sea_otter/views/register_view.dart';
 import 'package:little_sea_otter/views/stories_view.dart';
 import 'package:little_sea_otter/views/verify_email_view.dart';
+import 'constants/routes.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -26,13 +27,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/home',
+      initialRoute: homeRoute,
       routes: {
-        '/login': (context) => const LoginView(),
-        '/register': (context) => const RegisterView(),
-        '/verify_email': (context) => const VerifyEmailView(),
-        '/stories': (context) => const StoriesView(),
-        '/home': (context) => const Home(),
+        loginRoute: (context) => const LoginView(),
+        registerRoute: (context) => const RegisterView(),
+        verifyEmailRoute: (context) => const VerifyEmailView(),
+        storiesRoute: (context) => const StoriesView(),
+        homeRoute: (context) => const Home(),
       },
     );
   }

@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:little_sea_otter/constants/routes.dart';
 
 class StoriesView extends StatefulWidget {
   const StoriesView({super.key});
@@ -23,7 +24,7 @@ class _StoriesViewState extends State<StoriesView> {
                   if (shouldLogout) {
                     await FirebaseAuth.instance.signOut();
                     if (!mounted) return;
-                    Navigator.pushNamed(context, '/login');
+                    Navigator.pushNamed(context, loginRoute);
                   }
                   break;
                 default:
