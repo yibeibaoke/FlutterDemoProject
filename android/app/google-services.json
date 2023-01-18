@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1042204696108",
+    "project_id": "bojji-project-i",
+    "storage_bucket": "bojji-project-i.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042204696108:android:408fed5f45572a5c21bb89",
+        "android_client_info": {
+          "package_name": "com.littleseaotter.little_sea_otter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042204696108-53coltgiija9s7p32o11io5cd99egbue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ2FJUyJUmBKwGumNsftgZ4fDkXPdqxJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042204696108-53coltgiija9s7p32o11io5cd99egbue.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1042204696108-3l6lqna5pdc1bnh4i53bsll66em5mhjn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.littleseaotter.littleSeaOtter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

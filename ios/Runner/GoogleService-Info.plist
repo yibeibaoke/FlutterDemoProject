@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1042204696108-3l6lqna5pdc1bnh4i53bsll66em5mhjn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1042204696108-3l6lqna5pdc1bnh4i53bsll66em5mhjn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBbJ7RgcsYee6c8BEdguE3dTtoAgbS8N8c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1042204696108</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.littleseaotter.littleSeaOtter</string>
+	<key>PROJECT_ID</key>
+	<string>bojji-project-i</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bojji-project-i.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1042204696108:ios:b1bf3bf73a1f0f9821bb89</string>
+</dict>
+</plist>
